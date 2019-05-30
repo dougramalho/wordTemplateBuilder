@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="app" xmlns:v-on="http://www.w3.org/1999/xhtml">
+    <input type="text" class="form-control" v-on:input="changeTitle" />
+    <p>{{title}}</p>
+    
+    <button v-on:click="buildDocument" class="btn btn-primary">Gerar Documento</button>
+</div>
+
+
+
+@section scripts
+{
+    <script src="@Url.Content("~/public/dist/js/home.js")"></script>
+}
